@@ -1,56 +1,54 @@
-
-    var num = 10;
-    let name = "Mew";
+var num = 10;
+let name = "Mew";
 //   let Array = [10,15,"Mew"];
-    const obj = { name: "Mew", age: 22 };
-    const objMix = {
-        data: [
-            {name:"Dang",gpa: 4.3 },
-            {name:"Dam",gpa: 2.8 },
-            ],
-        };
+const obj = { name: "Mew", age: 22 };
+const objMix = {
+  data: [
+    { name: "Dang", gpa: 4.3 },
+    { name: "Dam", gpa: 2.8 },
+  ],
+};
 
-        console.log(num);
-        // console.log(Array);
-        console.log(objMix);
-        
-        let string = num + name;
-        console.log(string);
+console.log(num);
+// console.log(Array);
+console.log(objMix);
 
-        // string = objMix.data[1].name + Array[0];
-        console.log(String);
+let string = num + name;
+console.log(string);
 
-        // string = "<p>" + Array[2] + "</p>";
-        // string = `<p>${Array}</p>`;
-        
-        console.log(string)
+// string = objMix.data[1].name + Array[0];
+console.log(String);
 
-        function Add(a, b){
-        return a + b;
-    }
+// string = "<p>" + Array[2] + "</p>";
+// string = `<p>${Array}</p>`;
 
-    console.log(Add(3, 5));
+console.log(string);
 
-    document.getElementById("div1").innerHTML = name;
+function Add(a, b) {
+  return a + b;
+}
 
-    $(function () {
-       // alert("Hello");
-        $("#div1").html("Jantima");
+console.log(Add(3, 5));
 
-        $("#bt1").click(function () {
-            $("#div1").html("I love IT");
-        });
+document.getElementById("div1").innerHTML = name;
 
-        $("#bt3").click(()=> { 
-            //arrow function
-            $(".in1").val("BRU");
-        });
+$(function () {
+  // alert("Hello");
+  $("#div1").html("Jantima");
 
-        $("#bt4").click(()=> { 
-            $(".in1:odd").addClass("red");
-        });
+  $("#bt1").click(function () {
+    $("#div1").html("I love IT");
+  });
 
-        $("#div_about").load("./pages/about.html");
-        
-    }); //jQuery Handle
+  $("#bt3").click(() => {
+    //arrow function
+    $(".in1").val("BRU");
+  });
 
+  $("#bt4").click(() => {
+    $(".in1:odd").addClass("red");
+  });
+
+  $("#div_about").load("./pages/about.html");
+  $("#div_form").load("./pages/form.html");
+}); //jQuery Handle
